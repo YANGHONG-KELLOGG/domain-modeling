@@ -15,5 +15,24 @@ CREATE TABLE students (
 );
 
 -- Create the rest of the tables
+create table teachers(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  frist_name TEXT,
+  last_name TEXT,
+  bio TEXT
+);
+
+create table courses(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name text,
+  description text
+);
+
+create table sections(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  time text,
+  course_id text,
+  teacher_id text
+)
 
 
